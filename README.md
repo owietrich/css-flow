@@ -22,6 +22,8 @@ This article is illustrated with concrete [examples](https://github.com/owietric
 
 A `block` element will span the full width of its parent element and will start on a new line in the normal flow. The flow will always continue on a new line after the block element.
 
+![block](/assets/block.png)
+
 You can change the dimensions of a block element (`width` and `height`) in the normal flow.
 
 In fact block elements are elements that are fomatted visually as block using `display` as `block`, `list-item`, `table` or `table-*`. You'll also format an element into a block using `float`, positions `absolute` or `fixed` and `overflow`.
@@ -30,6 +32,8 @@ In fact block elements are elements that are fomatted visually as block using `d
 
 At the opposite of block elements, inline-level boxes are displayed in lines and doesn't break the flow on a new one.
 
+![inline](/assets/inline.png)
+
 You can't change the dimensions (`width` and `height`) or an inline element.
 
 
@@ -37,5 +41,5 @@ You can't change the dimensions (`width` and `height`) or an inline element.
 
 Too often overlooked the `inline-block` is probably the most useful type of box. An inline-level element is a box which is flowed as a single inline box (the contente is formatted as a block and the box itself is formatted aas an inline box).
 
-
+![inline-block](/assets/inline-block.png)
 
