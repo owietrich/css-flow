@@ -48,7 +48,7 @@ To display block elements one next to an other, I would advise you to use `inlin
 
 ## flows and boxes
 
-To finish this article, I just wanted to illustrate the type of boxes in a single example. 
+To finish this article, I just wanted to illustrate the type of boxes in a single example and how straightforward it is to create complex layouts:
 
 ![mix](/assets/mix.png)
 
