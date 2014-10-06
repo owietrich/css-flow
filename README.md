@@ -9,12 +9,11 @@ If the answer is yes, I invite you to read the rest of this article.
 
 So what is normal flow anyway? It is basically the way your elements will be rendered and will flow down a document if not [positionned](http://github.com/owietrich/css-positions).
 
-Normal flow is part of the [basic box model](http://www.w3.org/TR/css3-box/) described in the HTML specificiations. You'll need to know at least 4 types of rendering box used for an element in order to master it:
+Normal flow is part of the [basic box model](http://www.w3.org/TR/css3-box/) described in the HTML specificiations. You'll need to know at least 3 types of rendering box used for an element in order to master it:
 
   - block
   - inline
   - inline-block
-  - none
 
 
 This article is illustrated with concrete [examples](https://github.com/owietrich/css-flow/blob/master/examples).
@@ -25,10 +24,18 @@ A `block` element will span the full width of its parent element and will start 
 
 You can change the dimensions of a block element (`width` and `height`) in the normal flow.
 
-In fact block elements are elements that are fomatted visually as block using `display` as `block`, `list-item`, `table` or `table-*`.
-
+In fact block elements are elements that are fomatted visually as block using `display` as `block`, `list-item`, `table` or `table-*`. You'll also format an element into a block using `float`, positions `absolute` or `fixed` and `overflow`.
 
 ## inline
 
+At the opposite of block elements, inline-level boxes are displayed in lines and doesn't break the flow on a new one.
+
+You can't change the dimensions (`width` and `height`) or an inline element.
+
+
 ## inline-block
+
+Too often overlooked the `inline-block` is probably the most useful type of box. An inline-level element is a box which is flowed as a single inline box (the contente is formatted as a block and the box itself is formatted aas an inline box).
+
+
 

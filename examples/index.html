@@ -7,7 +7,9 @@
 	<style>
 	  .container {
 	  	border:2px solid #95a5a6;
-	  	width:400px;
+	  	max-width:600px;
+	  	min-height: 140px;
+	  	margin-bottom: 30px;
 	  }
 
 	  .container * {
@@ -19,12 +21,49 @@
 	  	background: #e74c3c;
 	  	color:white;
 	  }
+
+	  .inline {
+	  	background: #34495e;
+	    color:white;
+	  }
+
+	  .inline-block {
+	  	display:inline-block;
+	  	background:#27ae60;
+	  	color:white;
+	  }
+
+	  .one {
+	  	height:200px;
+	  }
 	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="block">block</div>
-		<div class="block">block</div>
+		<h2>Block boxes</h2>
+		<div class="block">display:block</div>
+		<div class="block">display:block</div>
+	</div>
+
+	<div class="container">
+		<h3>Inline boxes</h3>
+		<span class="inline">This is one line text</span>
+		<span class="inline"> and an other</span>
+	</div>
+
+	<div class="container">
+		<h3>Inline block boxes</h3>
+		<span class="inline-block one">This is one line block</span>
+		<span class="inline-block"> and an other</span>
+	</div>
+
+	<div class="container">
+		<h3>A mix of boxes</h3>
+		<span class="inline-block one">I'm inline block</span>
+		<div class="block">I'm block</div>
+		<span  class="inline">I'm inline</span>
+		<span class="inline-block"> I'm inline block</span>
+	  <div class="block">I'm block</div>
 	</div>
 </body>
 </html>
