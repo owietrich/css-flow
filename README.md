@@ -5,7 +5,7 @@ CSS normal flow is often misunderstood and leads to a heck lot of junk in our co
 
 If the answer is yes, I invite you to read the rest of this article. 
 
-## overview
+## basics
 
 So what is normal flow anyway? It is basically the way your elements will be rendered and will flow down a document if not [positionned](http://github.com/owietrich/css-positions).
 
@@ -18,7 +18,7 @@ Normal flow is part of the [basic box model](http://www.w3.org/TR/css3-box/) des
 
 This article is illustrated with concrete [examples](https://github.com/owietrich/css-flow/blob/master/examples).
 
-## block
+### block
 
 A `block` element will span the full width of its parent element and will start on a new line in the normal flow. The flow will always continue on a new line after the block element.
 
@@ -28,7 +28,7 @@ You can change the dimensions of a block element (`width` and `height`) in the n
 
 In fact block elements are elements that are fomatted visually as block using `display` as `block`, `list-item`, `table` or `table-*`. You'll also format an element into a block using `float`, positions `absolute` or `fixed` and `overflow`.
 
-## inline
+### inline
 
 At the opposite of block elements, inline-level boxes are displayed in lines and doesn't break the flow on a new one.
 
@@ -37,9 +37,19 @@ At the opposite of block elements, inline-level boxes are displayed in lines and
 You can't change the dimensions (`width` and `height`) or an inline element.
 
 
-## inline-block
+### inline-block
 
-Too often overlooked the `inline-block` is probably the most useful type of box. An inline-level element is a box which is flowed as a single inline box (the contente is formatted as a block and the box itself is formatted aas an inline box).
+Too often overlooked the `inline-block` is probably the most useful type of box. An inline-level element is a box which is flowed as a single inline box (the content is formatted as a block and the box itself is formatted aas an inline box).
 
 ![inline-block](/assets/inline-block.png)
+
+To display block elements one next to an other, I would advise you to use `inline-block` instead `float` which is not suited for layouts (a floating element is not in the flow).
+
+
+## flows and boxes
+
+To finish this article, I just wanted to illustrate the type of boxes in a single example. 
+
+![mix](/assets/mix.png)
+
 
