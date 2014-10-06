@@ -16,10 +16,19 @@ Normal flow is part of the [basic box model](http://www.w3.org/TR/css3-box/) des
   - inline-block
   - none
 
+
+This article is illustrated with concrete [examples](https://github.com/owietrich/css-flow/blob/master/examples).
+
 ## block
+
+A `block` element will span the full width of its parent element and will start on a new line in the normal flow. The flow will always continue on a new line after the block element.
+
+You can change the dimensions of a block element (`width` and `height`) in the normal flow.
+
+In fact block elements are elements that are fomatted visually as block using `display` as `block`, `list-item`, `table` or `table-*`.
+
 
 ## inline
 
 ## inline-block
 
-trop souvent oublié je la considere la plus utils

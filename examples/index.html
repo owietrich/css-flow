@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS flow</title>
+	<link rel="stylesheet" href="block.css">
+	<style>
+	  .container {
+	  	border:2px solid #95a5a6;
+	  	width:400px;
+	  }
+
+	  .container * {
+	  	margin:10px;
+	  	padding:20px 10px;
+	  }
+
+	  .block {
+	  	background: #e74c3c;
+	  	color:white;
+	  }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="block">block</div>
+		<div class="block">block</div>
+	</div>
+</body>
+</html>
