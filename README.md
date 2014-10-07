@@ -53,6 +53,8 @@ To finish this article, I just wanted to illustrate the type of boxes in a singl
 ![mix](/assets/mix.png)
 
 
+If you have any questions or comments, please feel free to post an [issue](https://github.com/owietrich/css-flow/issues).
+
 ## License
 
 The MIT License (MIT)
